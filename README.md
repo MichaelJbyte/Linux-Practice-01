@@ -40,4 +40,20 @@ Day 1 covers the basics of the Linux kernal, commonly used commands, command lin
 
 ## Topics Covered 9/8/25 
  
-Day 2 covers the 
+Day 2 covers common file manipulation commands such as cp (copy), rm (remove), and mv (move). I reinforce these commands by interacting with them and using their respective flags.  
+
+Below will be the notes I took during this time:
+
+- _~_: Stands for home directory.
+- _Absolute Paths_: Can be used in place of directory names. Begins with root '/' and gives full location.
+  * [ex: /~/home/Desktop/Directory]
+- _Hidden Files_: Can be made like other files, always begin with a '.'
+  * [ex: .hiddenfile]
+- _ls -l_: This flag gives a long detailed list about everything in the directory.
+- _cp -r_: You must use the '-r' flag when copying a directory in order to copy all of its contents over.
+  * [similarly, rm shares the '-r' flag and must be used with directories]
+- _mv_: Has two functions. Can both move contents over to a new name and directly rename a directory or file.
+- _ll -a_: This is another way to write 'ls -la'
+- _rm -i_: The '-i' flag asks for confirmation before deleting.
+- _-R_: Can be used with 'ls.' Lists everything, even the subdirectories.
+- _rm -rf_: This is a complete removal of data. '-r' allows for deletion of directories while '-f' forces the removal, ignoring any confirmation. 
