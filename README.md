@@ -38,12 +38,14 @@ Day 1 covers the basics of the Linux kernal, commonly used commands, command lin
 
 ---
 
-## Topics Covered 9/8/25 
+## Topics Covered 9/10/25 
  
 Day 2 covers common file manipulation commands such as cp (copy), rm (remove), and mv (move). I reinforce these commands by interacting with them and using their respective flags.  
 
 Below will be the notes I took during this time:
 
+### Notes
+  
 - _~_: Stands for home directory.
 - _Absolute Paths_: Can be used in place of directory names. Begins with root '/' and gives full location.
   * [ex: /~/home/Desktop/Directory]
@@ -56,4 +58,55 @@ Below will be the notes I took during this time:
 - _ll -a_: This is another way to write 'ls -la'
 - _rm -i_: The '-i' flag asks for confirmation before deleting.
 - _-R_: Can be used with 'ls.' Lists everything, even the subdirectories.
-- _rm -rf_: This is a complete removal of data. '-r' allows for deletion of directories while '-f' forces the removal, ignoring any confirmation. 
+- _rm -rf_: This is a complete removal of data. '-r' allows for deletion of directories while '-f' forces the removal, ignoring any confirmation.
+
+---
+
+## Topics Covered 9/12/25 
+ 
+Day 3 
+
+Below will be the notes I took during this time:
+
+### Notes
+
+- _cat -n_: Numbers the contents of a file. Helpful for large files full of content.
+- _head/tail -n#_: '-n#' can be used to list the content for only that line
+- _head/tail -c#_: Displays the characters assoicated with the chosen number, up to that point, in the file.
+- When using 'tail -c1,' you might return nothing. The last character may be empty, so be sure to try -c2 after.
+- when making both a parent directory and subdirectory with 'mkdir,' you must use the '-p' flag and format the code as such: 'mkdir -p dir/subdir' to properly execute the command.
+
+### Commands
+
+  - _history_: Allows you to look at all the commands you have previously typed.
+  - _whatis_: Gives a small blurb of a command.
+    * Truncated 'man.'
+  - _alias_: Can name certain commands to prevent repetitive typing.
+    * [ex: alias foobar='ls -la']
+    * can remove them by using: 'unalias.'
+  - _exit_: Use exit to leave a terminal if you have no GUI.
+  - _head_: Shows the first ten lines of the file.
+  - _tail_: Shows the last ten lines of the file.
+  - _diff_: Shows differences and changes between two files.
+    * If comparing directories, make sure to use '-r' before to recursively compare.
+  - _chown_: Changes ownership of a file.
+    * [ex: sudo chown root:root example.txt | 'root:root' changes the 'owner:group' of the file.]
+    * Use '-R' to change directory ownership.
+   
+    
+  ### _CHMOD_: Change mode. Allows you to change permissions for a file.
+    > Regarding chmod: When using: 'ls -l,' to list the details of a file, the beginning details the permissions of said file. 
+    it can start with either a '-, d,' or 'l' describing what type of file it is.
+    > Next you will see 'r, w,' or 'x,' or any sort of combination of them. 'r' stands for read, 'w' for write, and 'x' 
+    for execute permissions. A '-' means that permission is denied.
+    > The group is ordered from owner to group to public permissions. 
+   - When using 'chmod,' it may look something like this: 'sudo chmod 700 example.txt'
+     * The numerical position stands for the permissions. The first digit being the owner perms, the second for the group, and the last one for the public.
+     * The numerical value details what kind of permissions. Each digit can be a number from 0 to 7, and is added up from four basic numbers with permissions:
+       [4: Read | 2: Write | 1: Execute | 0: None ]
+   - When using 'chmod' for a directory, you must use the flag '-d.'
+
+
+### Command Line shortcuts:
+
+  - _Ctrl + R_: Pretty much Up Arrow, allowing you to go back to a previous command, except this time you can search for it.
