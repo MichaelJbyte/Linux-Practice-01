@@ -110,3 +110,50 @@ Below will be the notes I took during this time:
 ### Command Line shortcuts:
 
   - _Ctrl + R_: Pretty much Up Arrow, allowing you to go back to a previous command, except this time you can search for it.
+
+---
+
+## Topics Covered 9/15/25 
+ 
+Day 4 covers all common commands regarding users.
+
+Below will be the notes I took during this time:
+
+### Commands
+
+  - _useradd_: Adds a user. { _-m_: adds a home directory to file.}
+  - _userdel_: removes a user. {_-r_ removes all directories and mail as well.}
+  - _grep_: A search function for files.
+    * [To verify a user, use grep on a username and search in the '/etc/passwd' file. This houses all user creations.]
+  - _passwd_: adds a password to a selected user.
+    * [You can lock a user out by using 'passwd -l username' The '-u' flag reverses it.]
+    * [You can use the flag '-S' to check password expiration and if the account is locked.]
+  - _usermod_: Allows you to modify user account settings.
+    * [using '-d /home/dir username' can allow you to change a users' directory.]
+    * [using '-s /bin/bash username' changes to users' shell.]
+    * [using '-aG groupname username' will change what group the user belongs to. Often used for sudo.]
+  - _groups_: Checks which groups a user is apart of.
+  - _su - username_: Switches your user.
+
+<!-- Template
+
+---
+
+## Topics Covered #/#/# 
+ 
+Day # covers 
+
+Below will be the notes I took during this time:
+
+### Notes
+
+-
+
+### Commands
+
+  - 
+
+### Command Line shortcuts:
+
+  - 
+-->
