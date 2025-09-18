@@ -135,6 +135,35 @@ Below will be the notes I took during this time:
   - _groups_: Checks which groups a user is apart of.
   - _su - username_: Switches your user.
 
+---
+
+## Topics Covered 9/17/25 
+ 
+Day 5 simulates a jr system administrator, tasking me to overlook a linux os and consolidate my findings just like an administrator would.
+
+Below will be the notes I took during this time:
+
+### Notes
+
+  - **Output Redirection:** '>' and '>>' are operators which can direct command results into files. The single arrow allows you to insert, define, and replace and info any the current file with whatever information you want. The double arrow appends, or adds data on top of what is already in the file, allowing you to add multiple command outputs into a single file.
+  - **Wildcards:** Whenever using wildcards (ex: *.log) you should always specify and use them at the end of the command.
+
+### Commands
+
+  - _uname_: shows the name of the kernal being used.
+    * ['-a' shows all system information.]
+  - _uptime_: Displays how long the system has been up and running.
+  - _id_: Shows your user id, group id, and what groups your user belongs to.
+  - _top_: Lists all processes running, uptime, current time, CPU usage, memory usage, and tasks.
+  - _tree_: Displays directory and files in a branching format. (May have to be installed)
+  - _tar_: Stands for Tape Archive. Used to create, modify, and extract archived files.
+    * ['-czf' is a useful flag which creates and copies over files to a new archived file.]
+  - 
+
+### Command Line shortcuts:
+
+  - 
+
 <!-- Template
 
 ---
