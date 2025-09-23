@@ -146,7 +146,9 @@ Below will be the notes I took during this time:
 ### Notes
 
   - **Output Redirection:** '>' and '>>' are operators which can direct command results into files. The single arrow allows you to insert, define, and replace and info any the current file with whatever information you want. The double arrow appends, or adds data on top of what is already in the file, allowing you to add multiple command outputs into a single file.
+    * [For example, I used a similar command to save all lines, with the word "ERROR," found in a log: _grep "ERROR" app.log > ~/project/error_report.txt_ ]
   - **Wildcards:** Whenever using wildcards (ex: *.log) you should always specify and use them at the end of the command.
+  - You can use the pipe symbol (|) to send the output of one command into another. Very useful for 'grep.'
 
 ### Commands
 
@@ -157,7 +159,11 @@ Below will be the notes I took during this time:
   - _top_: Lists all processes running, uptime, current time, CPU usage, memory usage, and tasks.
   - _tree_: Displays directory and files in a branching format. (May have to be installed)
   - _tar_: Stands for Tape Archive. Used to create, modify, and extract archived files.
-    * ['-czf' is a useful flag which creates and copies over files to a new archived file.]
+    * ['-czf' is a useful flag which creates and copies over files to a new archived file.]\
+  - _dmesg_: A command which displays kernal messxages such as errors and running processes.
+    * [To make a search for a certain word or phrase found in these messages, use this command:
+      _sudo dmesg | grep "word1|word2"_]
+  - When using the 'diff' command, the order does matter in which you put them. The result will differ.
 
 ---
 
