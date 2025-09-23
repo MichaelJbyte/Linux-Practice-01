@@ -149,6 +149,7 @@ Below will be the notes I took during this time:
     * [For example, I used a similar command to save all lines, with the word "ERROR," found in a log: _grep "ERROR" app.log > ~/project/error_report.txt_ ]
   - **Wildcards:** Whenever using wildcards (ex: *.log) you should always specify and use them at the end of the command.
   - You can use the pipe symbol (|) to send the output of one command into another. Very useful for 'grep.'
+  - When using the 'diff' command, the order does matter in which you put them. The result will differ.
 
 ### Commands
 
@@ -163,7 +164,6 @@ Below will be the notes I took during this time:
   - _dmesg_: A command which displays kernal messxages such as errors and running processes.
     * [To make a search for a certain word or phrase found in these messages, use this command:
       _sudo dmesg | grep "word1|word2"_]
-  - When using the 'diff' command, the order does matter in which you put them. The result will differ.
 
 ---
 
