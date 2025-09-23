@@ -158,11 +158,40 @@ Below will be the notes I took during this time:
   - _tree_: Displays directory and files in a branching format. (May have to be installed)
   - _tar_: Stands for Tape Archive. Used to create, modify, and extract archived files.
     * ['-czf' is a useful flag which creates and copies over files to a new archived file.]
-  - 
 
-### Command Line shortcuts:
+---
 
-  - 
+## Topics Covered 9/22/25 
+ 
+Day 6, once again, tasks me to be a system administrator. This time, I learn to create, remove, manage, and change user accounts and their permissions. I also deal with managing group, file, and directory permissions; learning how to set group and user permissions on directories and utilizing flags to assist in directory creation.
+
+Below will be the notes I took during this time:
+
+### Notes
+
+  - Reminder that for 'chmod' the values are: Read (4), Write (2), and Execute (1).
+  - 'setgid' and 'setuid' follow three basic terms. A Effective User ID is an ID which grants the user its designated permissions. The Real User ID is the actual user who ran a process, marking its permissions. The last one which plays a part is the Saved User ID; a process allowing the system switch between the Real and Effective ID's. This is the inner workings behind these two permissions, allowing them to work.
+  - 'adduser' and 'useradd' both add a user, but prompt you differently. 'useradd' gives you a bit more control, but you have the specify everything with flags. 'adduser' prompts you immediately after creation, allowing you to fill in passwords and other information.
+  - When adding users to a group, make sure to use the flags '-a' for appending and '-G' to add a group. (Must use 'usermod')
+  - After locking an account, you can check by using this command (the highlighted part is the hash for a passwd for another account):
+
+---
+
+![hash_photo](https://github.com/MichaelJbyte/Linux-Practice-01/blob/e9f947868e86fb1382b2a36e352bae0a4a37a3ed/linux01%20-%20passwd_hash.png)
+
+---
+
+### Commands (Permssions)
+
+  - _setgid_: Not neccessarily a command, but a permission. This sets a group id to a directory, making any new files created in the directory to be automatically applied to the group the directory is associated with. This also allows a user to act and access any files in this directory as if they were apart of the designated group which owns the directory itself.
+    * [Must be used with chmod.]
+    * [There are two notations for this permission: symbolic = 'g+s' or numeric '2###']
+  - _setuid_: similar to the 'setuid' permission, but instead works for the users.
+    * [There are two notations for this permission: symbolic = 'u+s' or numeric '4###']
+  - _umask_: This command does the opposite of 'chmod.' Instead of adding/changing permissions, it can remove permissions with the same numerical values. It sets a new standard.
+    * [ex: umask 021]
+  - _the sticky bit_: This is another permissions which sticks and locks a certain file/directory. This means only the owner may delete whichever file/directory is modified with this permission.
+    * [There are two notations for this permission: symbolic = '+t' or numeric '1###']
 
 <!-- Template
 
