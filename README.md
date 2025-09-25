@@ -203,7 +203,7 @@ Below will be the notes I took during this time:
 
 ## Topics Covered 9/24/25 
  
-Day 7 covers helpful commands which can assist in discovery regarding alternate commands and options. I also note some important information to remember regarding the linux system.
+Day 7 covers helpful commands which can assist in discovery regarding alternate commands and options. I also note some important information to remember regarding the linux system. Lastly, I read a page about user management and some common paths I should know regarding users and groups.
 
 Below will be the notes I took during this time:
 
@@ -216,6 +216,14 @@ Below will be the notes I took during this time:
   * [An useful way to search for what groups a user is related to is by using the following command:
     cat /etc/group | grep -E "username"]
 - Sudo commands and actions are logged.
+- "Daemon": A program that runs as a background process.
+
+### User Management:
+- Every user has a home directory. It can be found at: '/home/username'
+- _su_: To enter a root terminal, use this command.
+- The '/etc/passwd' path holds user information and details such as the name, password availability(x = stored in /etc/shadow, * = no login access, ! = locked acc, " " = no passwd), UID & GID, home directory, and shell.
+- The '/etc/shadow' path holds password information for users such as the name, password hash, date of last change, min/max passwd age, and expiration info(3).
+- The '/etc/group' path holds group information such as group name, group passwd (usually a *), GID, and the users associated.  
 
 ### Commands
 
@@ -224,6 +232,7 @@ Below will be the notes I took during this time:
   - _sort_: Will sort output alphabetically.
     * [Often used with other commands using the pipe operator '|' ]
   - _groups_: Command which displays what groups a user is in.
+
 
 <!-- Template
 
