@@ -198,6 +198,32 @@ Below will be the notes I took during this time:
     * [ex: umask 021]
   - _the sticky bit_: This is another permissions which sticks and locks a certain file/directory. This means only the owner may delete whichever file/directory is modified with this permission.
     * [There are two notations for this permission: symbolic = '+t' or numeric '1###']
+   
+---
+
+## Topics Covered 9/24/25 
+ 
+Day 7 covers helpful commands which can assist in discovery regarding alternate commands and options. I also note some important information to remember regarding the linux system.
+
+Below will be the notes I took during this time:
+
+### Notes
+
+- **man**: Some notes about the 'man' command. Use 'up/down arrows' to navigate. Use 'spacebar/b' to page up and down. Use '/' then type after to search. Use 'n/N' to navigate your search results.
+- When using the 'apropos' command, you should send the information into a 'grep' command to help identify which command you are looking for. [ex: "apropos file | grep create"]
+- When a new user is created, it must be assigned to a primary group. Every other group is considered secondary. If you do not specify the primary group during creation, the system will automatically make one and title it with the username.
+- '/etc/group' is where group information is stored in a linux system.
+  * [An useful way to search for what groups a user is related to is by using the following command:
+    cat /etc/group | grep -E "username"]
+- Sudo commands and actions are logged.
+
+### Commands
+
+  - _type_: This command details how a different command is interpreted by the shell.
+  - _apropos_: Will deliver **_all commands_** associated with whatever input you enter.
+  - _sort_: Will sort output alphabetically.
+    * [Often used with other commands using the pipe operator '|' ]
+  - _groups_: Command which displays what groups a user is in.
 
 <!-- Template
 
