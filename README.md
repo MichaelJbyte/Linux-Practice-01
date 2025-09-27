@@ -243,7 +243,7 @@ Below will be the notes I took during this time:
 
 ### Notes
 
--
+- https://labex.io/skilltrees/linux/groups/BasicSystemCommandsGroup/skills/column
 
 ### Commands
 
