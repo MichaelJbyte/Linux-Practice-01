@@ -233,6 +233,26 @@ Below will be the notes I took during this time:
     * [Often used with other commands using the pipe operator '|' ]
   - _groups_: Command which displays what groups a user is in.
 
+---
+
+## Topics Covered 9/26/25 
+ 
+Day 8 covers 
+
+Below will be the notes I took during this time:
+
+### Notes
+
+-
+
+### Commands
+
+  - 
+
+### Command Line shortcuts:
+
+  - 
+
 
 <!-- Template
 
