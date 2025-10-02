@@ -235,19 +235,27 @@ Below will be the notes I took during this time:
 
 ---
 
-## Topics Covered 9/26/25 
+## Topics Covered 10/01/25 
  
-Day 8 covers 
+Day 8 covers... 
 
-Below will be the notes I took during this time:
+Below will be the notes I took during this time: https://labex.io/skilltrees/linux/groups/BasicSystemCommandsGroup/skills/column
 
 ### Notes
 
-- https://labex.io/skilltrees/linux/groups/BasicSystemCommandsGroup/skills/column
+- The '-e' flag when using the 'echo' command allows echo to understand escape characters and sequences such as: '\n'
+- CSV stands for Comma-Seperated Values and is often used to store data. It is usually abbreviated to a '.csv' file.
+- TSV is similar to CSV, meaning Tab-Seperated Values; '.tsv'
+- ' $"\t" ' is an example of a way for Linux/Bash to understand a special character such as a tab [\t].
 
 ### Commands
 
-  - 
+  - _column_: This command swiftly aligns plaintext, making it more readable.
+    * [The '-t' flag tells the command to make a table]
+    * [The '-s' flag is used to identify any common seperator key(delimiter) and seperate the data using that knowledge. Input might look as such:
+      'column -ts ":" ']
+  - _nano_: This command allows you to edit a '.sh' file.
+    * [You can enter code and set it to execute using 'chmod +x' to use it just like a command.] 
 
 ### Command Line shortcuts:
 
