@@ -1,4 +1,137 @@
-# Linux-Practice-01
+# Linux Fundamentals Practice Labs
+
+Hands-on Linux practice focused on core system navigation, file management, permissions, user administration, and basic system monitoring.
+This project documents practical exercises completed while learning Linux fundamentals using guided labs and direct system interaction.
+
+Below the listed labs will be reference notes I wrote for future reference.
+
+
+--- 
+
+
+## Lab 1: Linux Filesystem Navigation & File Management
+
+### Purpose:
+
+This lab documents hands-on practice with essential Linux filesystem navigation and file manipulation commands. The goal was to build comfort working entirely from the terminal in a Linux system, understanding directory structures, and safely managing files and folders.
+
+### Skills Practiced: 
+
+* Navigating the Linux filesystem using absolute and relative paths
+* Creating, viewing, copying, moving, and deleting files and directories
+* Understanding hidden files and directory structure
+* Using command-line shortcuts to improve efficiency
+* Reading command documentation to discover flags and options
+
+### Key Commands & Concepts:
+
+* pwd, cd, ls
+* Wildcards (*)
+* mkdir, touch
+* cp, mv, rm (including recursive flags)
+* Hidden files (. prefix)
+* man and --help (command documentation)
+* Command-line shortcuts (Tab completion, Ctrl+L)
+
+### What Was Done:
+
+* Navigated directory structures with absolute paths
+* Created directories and subdirectories to organize files
+* Created and manipulated files from the terminal
+* Copied moved, and removed files within directories
+
+### Outcome:
+
+This lab assisted in a more familiar foundation for working within Linux without reliance on a graphical interface. It reinforced safe file handling practices, understanding core Linux commands, and improved confidence navigating and managing systems through the command line.
+
+
+---
+
+
+## Lab 2: File Manipulation, Permissions, and Ownership
+
+### Purpose:
+
+This lab focused on deeper file manipulation and permission management within a Linux system. The goal was to understand how files and directories are controlled through permissions, ownership, command flags, and how these settings affect system security and usability.
+
+### Skills Practiced:
+
+* Copying, moving, and removing files and directories using flags
+* Understanding Linux file permissions and ownership
+* Modifying permissions using symbolic and numeric notation
+* Changing file and directory ownership
+
+### Key Commands & Concepts:
+
+* cp, mv, rm (with -r and -i flags)
+* ls -l (permission and ownership details)
+* chmod (numeric and symbolic permissions)
+* chown (user and group ownership)
+* Understanding read, write, and execute permissions
+
+### What Was Done:
+
+* Copied and moved files and directories using recursive flags where required
+* Renamed files and directories using mv
+* Removed files and directories with confirmation prompts to avoid accidental deletion
+* Viewed file permission details using ls -l
+* Modified file permissions using chmod with numeric values and symbolic notations
+* Changed file and directory ownership using chown
+* Applied recursive permission and ownership changes across directories
+
+### Outcome:
+
+This lab strengthened my understanding of Linux file permissions and ownership, which are critical for system security and user access control. It reinforced how improper permissions can create security risks and highlighted the importance of carefully managing files and directories in larger environments.
+
+
+---
+
+
+## Lab 3: File Viewing & Searching
+
+### Purpose:
+
+This lab focused on viewing file contents, searching through text, and discovering command usage within a Linux system. The objective was to become efficient at reading files directly from the terminal, locating relevant information, and identifying appropriate commands and options without relying on external resources.
+
+### Skills Practiced:
+
+Viewing and navigating file contents from the command line
+Searching within files and command output
+Discovering commands and understanding their options
+Using pipelines to refine command output
+Improving efficiency through command-line navigation techniques
+
+### Key Commands & Concepts:
+
+* cat, less, head, tail
+* grep (basic searching and filtering)
+* apropos (command discovery)
+* Pipes (|) for chaining commands
+* Understanding output and filtering
+
+### What Was Done:
+
+* Viewed full file contents using cat and organized output using less
+* Examined the beginning and end of files using head and tail
+* Searched for specific strings within files using grep
+* Filtered command output by piping results into grep
+* Used apropos to identify relevant commands and refined results with grep
+
+### Outcome:
+
+This lab improved efficiency when working with large files and system output in a Linux environment. It reinforced the importance of text searching for troubleshooting, system navigation, and administrative tasks, familiarizing me with a new set of common Linux commands.
+
+
+
+
+
+
+
+
+
+
+
+# Reference Notes
 Learning how to use Linux.
 
 Today I begin learning how to use Linux. I will begin by starting with the LabEX [Linux Journey](https://labex.io/linuxjourney).
