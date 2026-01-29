@@ -42,7 +42,7 @@ This lab documents hands-on practice with essential Linux filesystem navigation 
 
 ### Outcome:
 
-This lab assisted in a more familiar foundation for working within Linux without reliance on a graphical interface. It reinforced safe file handling practices, understanding core Linux commands, and improved confidence navigating and managing systems through the command line.
+This lab assisted in a stronger foundation for working within Linux without reliance on a graphical interface. It reinforced safe file handling practices, understanding core Linux commands, and improved confidence navigating and managing systems through the command line.
 
 
 ---
@@ -65,7 +65,7 @@ This lab focused on deeper file manipulation and permission management within a 
 
 * cp, mv, rm (with -r and -i flags)
 * ls -l (permission and ownership details)
-* chmod (numeric and symbolic permissions)
+* chmod (numeric and symbolic notation)
 * chown (user and group ownership)
 * Understanding read, write, and execute permissions
 
@@ -75,7 +75,7 @@ This lab focused on deeper file manipulation and permission management within a 
 * Renamed files and directories using mv
 * Removed files and directories with confirmation prompts to avoid accidental deletion
 * Viewed file permission details using ls -l
-* Modified file permissions using chmod with numeric values and symbolic notations
+* Modified file permissions using chmod with numeric values and symbolic notation
 * Changed file and directory ownership using chown
 * Applied recursive permission and ownership changes across directories
 
@@ -122,13 +122,86 @@ Improving efficiency through command-line navigation techniques
 This lab improved efficiency when working with large files and system output in a Linux environment. It reinforced the importance of text searching for troubleshooting, system navigation, and administrative tasks, familiarizing me with a new set of common Linux commands.
 
 
+---
 
 
+## Lab 4: User, Group, and Permission Management
+
+### Purpose:
+
+This lab documents hands-on practice managing users, groups, and permissions in a Linux environment. The goal was to understand how Linux controls access to files and system resources, and how administrators manage user privileges effectively.
+
+### Skills Practiced:
+
+* Creating, modifying, and removing user accounts
+* Managing primary and secondary groups
+* Understanding Linux permission structures
+* Applying special permissions to files and directories
+* Inspecting system files related to users and groups
+
+### Key Commands & Concepts:
+
+* adduser, useradd, usermod
+* groups
+* chmod (symbolic and numeric notation)
+* setuid, setgid
+* Sticky bit
+* umask
+* /etc/passwd, /etc/shadow, /etc/group
+
+### What Was Done:
+
+* Created and modified user accounts using both adduser and useradd
+* Assigned users to primary and secondary groups using usermod
+* Reviewed group membership and permission inheritance
+* Applied permission changes using chmod, utilizing numeric and symbolic notation
+* Practiced special permissions such as setuid, setgid, and the sticky bit
+* Examined system files to understand how Linux stores user, group, and password information
+
+### Outcome:
+
+This lab built a strong understanding in Linux access control and user administration. It reinforced how permissions impact system security, how group ownership affects file access, and how administrators safely manage users in multi-user environments.
 
 
+---
 
 
+## Lab 5: Output Formatting & Text Handling in Linux
 
+### Purpose:
+
+This lab documents hands-on practice working with command output and text formatting in a Linux environment. The goal was to improve readability of command-line data, understand how structured text files are handled, and prepare for working with system output.
+
+### Skills Practiced:
+
+Formatting command output for readability
+Working with structured text formats (CSV and TSV)
+Using escape characters in shell commands
+Editing files directly from the terminal
+
+### Key Commands & Concepts:
+
+echo and echo -e
+column
+CSV (Comma-Separated Values)
+TSV (Tab-Separated Values)
+nano
+File execution permissions (chmod +x)
+
+### What Was Done:
+
+Used echo -e to interpret escape characters such as newlines and tabs
+Worked with CSV and TSV-style data to understand how Linux parses structured text
+Used the column command with delimiters to align and format plaintext output
+Edited files directly from the terminal using nano
+Applied execute permissions to scripts to allow them to run as commands
+
+### Outcome:
+
+This lab furthered my ability to read, organize, and interpret command-line output. It reinforced how Linux handles structured text data and introduced foundational skills used when preparing scripts, logs, and reports in a terminal-based environment.
+
+
+---
 
 
 # Reference Notes
